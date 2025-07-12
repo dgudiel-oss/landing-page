@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Registro</title>
+</head>
+
+<body>
+
+    <header class="cabecera">
+        <img src="../img/tecnofest-2024.png" alt="">
+        <button id="mostrarLogin" class="btnmostrar">Inscribirse al tecnofest</button>
+    </header>
+
+    <div class="fondo">
+        <div class="login" id="loginForm">
+            <form action="http://localhost:4200/adduser" method="post" name="MyForm" id="MyForm">
+                <h1>Registrarse</h1>
+                <div>
+                    <input type="text" name="Nombre" placeholder="Nombre" id="nombre" required>
+                </div>
+                <div>
+                    <input type="text" name="Apellido" placeholder="Apellido" id="aapellido" required>
+                </div>
+                <div>
+                    <input type="tel" name="Telefono" placeholder="Telefono" id="ttelefono" required>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="Personageneral" name="Tipo_participante" value="General" required>
+                    <label for="Personageneral">Persona general</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="estudiante" name="Tipo_participante" value="Estudiante" required>
+                    <label for="estudiante">Estudiante</label>
+                </div>
+                <div id="selectContainer">
+                    <select id="opciones" name="Nivel">
+                        <option value="" disabled selected>Seleccione el nivel</option>
+                        <option value="Superior">Superior</option>
+                        <option value="Media">Media</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="submit">Registrarse</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="section-container">
+            <section>
+                <h2>Tecnofest</h2>
+                <p>No te quedes sin disfutar de esta experiencia que estamos preparando para ti.
+                    <br>Ven y aprende en el Tecnofest. ¡No te lo puedes perder! 
+                </p>
+            </section>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <div class="contenido">
+            <div class="security">
+                <img src="/img/912278.png" alt="">
+                <h2>Innova</h2>
+                
+            </div>
+        </div>
+    
+        <div class="contenido">
+            <div class="security">
+                <img src="/img/Conoce.png" alt="">
+                <h2>Conoce</h2>
+            </div>
+        </div>
+        
+        <div class="contenido">
+            <div class="security">
+                <img src="/img/aprende.png" alt="">
+                <h2>Aprende</h2>
+                
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
